@@ -1,5 +1,13 @@
 {
   "compilerOptions": {
+    "baseUrl": "./src",
+    "paths": {
+      "appState": ["appState"],
+      "store": ["appState/store"],
+      "redux-hooks": ["appState/redux-hooks"],
+      "Features": ["Components/Features"],
+      "Layout": ["Components/Layout"],
+    },
     "target": "es5",
     "lib": [
       "dom",
