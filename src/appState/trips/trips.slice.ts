@@ -22,7 +22,7 @@ interface TripsResponse {
 export const fetchTrips = createAsyncThunk(
   'trips/fetchTrips',
   async () => {
-    const response = await fetch('url');
+    const response = await fetch('http://localhost:3333/trips');
 
     return (await response.json()) as TripsResponse; 
   }
@@ -39,7 +39,7 @@ export const tripsSlice = createSlice({
         state.status = 'loading';
       })
       .addCase(fetchTrips.fulfilled, (state, action) => {
-        state.status = 'idle';
+        state.status = 'fulfilled';
         const byId = action.payload.trips.reduce((tripsById, trip:Trip) => {
           tripsById[trip.carId as keyof TripsResponse] = trip;
 
