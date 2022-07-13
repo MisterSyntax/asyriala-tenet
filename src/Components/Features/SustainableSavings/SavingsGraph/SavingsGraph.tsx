@@ -26,7 +26,7 @@ export function SavingsGraph (props: ISavingsGraphProps) {
   const data = useAppSelector(state => getTripSavingsDataForCarId(state, activeVehicle));
 
   return (
-    <Box sx={{ display: 'flex', flexDirection: 'column', height: 320}}>
+    <Box sx={{ display: 'flex', flexDirection: 'column', height: 300}}>
       <Typography component="h2" variant="h6" color="primary" gutterBottom>
         Monthly Savings
       </Typography>
