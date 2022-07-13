@@ -31,7 +31,7 @@ export function App (props: IAppProps) {
     if(activeVehicle === '') {
       dispatch(setActiveVehicle(carsForTrips?.[0]?.id));
     }
-  }, [carsForTrips]);
+  }, [activeVehicle, carsForTrips, dispatch]);
 
   return (
     <FormControl sx={{ m: 1, minWidth: 120 }}>
