@@ -5,13 +5,17 @@ src
       AppBar
       Footer
     Features
-      Vehicle Select
-        - setActiveVehicle
-        - activeVehicle
-      SavingsGraph
-        - savingsPerMonth 
-      Total Savings
-        - totalSavings
+      SustainableSavings
+        - fetchCars
+        - fetchCosts
+        - fetchTrips
+        Vehicle Select
+          - setActiveVehicle
+          - activeVehicle
+        SavingsGraph
+          - savingsPerMonth 
+        Total Savings
+          - totalSavings
   appState
     trips
       - has trip data
