@@ -1,6 +1,6 @@
 interface MonthlyDrivingData {
   month: string,
-  milesDrive: number,
+  milesDriven: number,
 }
 
 export interface Trip {
