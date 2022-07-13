@@ -22,7 +22,7 @@ interface CarsResponse {
 export const fetchCars = createAsyncThunk(
   'cars/fetchCars',
   async () => {
-    const response = await fetch('url');
+    const response = await fetch('http://localhost:3333/cars');
 
     return (await response.json()) as CarsResponse; 
   }
@@ -39,7 +39,7 @@ export const carsSlice = createSlice({
         state.status = 'loading';
       })
       .addCase(fetchCars.fulfilled, (state, action) => {
-        state.status = 'idle';
+        state.status = 'fulfilled';
         const byId = action.payload.cars.reduce((carsById, car:Car) => {
           carsById[car.id as keyof CarsResponse] = car;
 

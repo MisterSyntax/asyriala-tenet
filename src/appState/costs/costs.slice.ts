@@ -16,7 +16,7 @@ const initialState: CostsState = {
 export const fetchCosts = createAsyncThunk(
   'costs/fetchCosts',
   async () => {
-    const response = await fetch('url');
+    const response = await fetch('http://localhost:3333/costs');
 
     return (await response.json()) as Costs; 
   }
@@ -33,7 +33,7 @@ export const costsSlice = createSlice({
         state.status = 'loading';
       })
       .addCase(fetchCosts.fulfilled, (state, action) => {
-        state.status = 'idle';
+        state.status = 'fulfilled';
         state.data = action.payload;
       })
       .addCase(fetchCosts.rejected, (state) => {
