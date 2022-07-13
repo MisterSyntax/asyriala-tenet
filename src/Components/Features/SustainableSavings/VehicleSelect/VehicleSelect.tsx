@@ -34,7 +34,7 @@ export function App (props: IAppProps) {
   }, [activeVehicle, carsForTrips, dispatch]);
 
   return (
-    <FormControl sx={{ m: 1, minWidth: 120 }}>
+    <FormControl sx={{ m: 1, minWidth: 120, maxWidth: '90vw' }}>
       <InputLabel id="vehicle-select-label">Vehicle</InputLabel>
       <Select
         labelId="vehicle-select-label"

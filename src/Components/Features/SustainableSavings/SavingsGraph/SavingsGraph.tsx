@@ -26,20 +26,20 @@ export function SavingsGraph (props: ISavingsGraphProps) {
   const data = useAppSelector(state => getTripSavingsDataForCarId(state, activeVehicle));
 
   return (
-    <Box sx={{ display: 'flex', flexDirection: 'column', height: 240}}>
+    <Box sx={{ display: 'flex', flexDirection: 'column', height: 320}}>
       <Typography component="h2" variant="h6" color="primary" gutterBottom>
-        Savings Graph
+        Monthly Savings
       </Typography>
       <ResponsiveContainer>
-        <BarChart width={730} height={250} data={data}>
+        <BarChart width={730} height={300} data={data.map(curr => ({ month: curr.month, savings: `${curr.savings.toFixed(2)}` }))}>
           <CartesianGrid strokeDasharray="3 3" />
           <XAxis dataKey="month" />
           <YAxis />
           <Tooltip />
-          <Legend />
           <Bar dataKey="savings" fill={theme.palette.primary.light} />
         </BarChart>
       </ResponsiveContainer>
+      <Typography variant='body2'>Savings are calculated compared to a 2019 Audi Q7</Typography>
     </Box>
   );
 }

@@ -23,14 +23,14 @@ export function TotalSavings (props: ITotalSavingsProps) {
   const totalSavings = useAppSelector(state => getTotalSavingsForCarId(state, activeVehicle));
   return (
     <>
-    <Typography component="h2" variant="h6" color="primary" gutterBottom>
-      Annual Savings: 
-    </Typography>
-    <Box sx={{display: 'flex', alignItems: 'center', justifyContent: 'center', minHeight: 160}}>
-      <Typography component="p" variant='h4' sx={{fontWeight: 'bold'}}>
-        ${totalSavings.toFixed(2)}
+      <Typography component="h2" variant="h6" color="primary" gutterBottom>
+        Annual Savings
       </Typography>
-    </Box>
+      <Box sx={{display: 'flex', alignItems: 'center', justifyContent: 'center', minHeight: 160}}>
+        <Typography component="p" variant='h4' sx={{ fontWeight: 'bold', color: 'success.main'}}>
+          ${totalSavings.toFixed(2)}
+        </Typography>
+      </Box>
     </>
   );
 }

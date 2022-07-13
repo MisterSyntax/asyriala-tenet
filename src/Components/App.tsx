@@ -29,14 +29,14 @@ export function App (props: IAppProps) {
     >
       <CssBaseline />
       <AppBar />
-      <Container sx={{ flexGrow: 1, mt: 2, mb: 2 }} maxWidth='md'> 
+      <Container sx={{ flexGrow: 1, mb: 2 }} maxWidth='md'> 
         <Box
           component='main'
           sx={{ 
             display: 'flex',
             justifyContent: 'center',
             flexDirection: 'column',
-            mt: 8,
+            mt: 3,
             minHeight: '100%',
             width: '100%',
           }}

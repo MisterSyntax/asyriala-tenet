@@ -56,7 +56,9 @@ export function SustainableSavings (props: ISustainableSavingsProps) {
 
   return (
     <Grid container spacing={3}>
-      <Typography variant='h2' component='h1'>Sustainable Savings</Typography>
+      <Grid item>
+        <Typography variant='h2' component='h1'>Sustainable Savings</Typography>
+      </Grid>
       <Grid item xs={12}>
         <VehicleSelect />
       </Grid>
@@ -66,7 +68,7 @@ export function SustainableSavings (props: ISustainableSavingsProps) {
             p: 2,
             display: 'flex',
             flexDirection: 'column',
-            height: 240,
+            height: 300,
           }}
         >
           <SavingsGraph />
