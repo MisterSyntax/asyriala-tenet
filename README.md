@@ -1,6 +1,8 @@
 # Sustainable Savings
 This application is used to calculate the monthly and annual cash savings for driving an EV vs a 2019 Audi Q7.
 
+![Screen Shot 2022-07-14 at 12 09 36 AM](https://user-images.githubusercontent.com/22300258/178923059-43814265-69fa-4e63-a68e-1e4658940f66.png)
+
 ## PHEV Disclaimer
 - **Disclaimer**: The calculations in this assume a PHEV was always on EV power. The reason we do this is because we don't have enough information about how far a user drove at a time, only monthly driving data. As a result it is possible a user never drove less than the EVs range before recharging. We would need more granular data in order to properly calculate savings for PHEVs. So, since this is just a prototype I took the easy route.
 - **How to iterate**: If had more granular data on PHEVs driving we could use the following formula to calculate savings
