@@ -35,7 +35,7 @@ This runs the tests
 5. Parse the data files, and create the mock apis
 6. Create the redux store, slices, selectors, and their tests
 7. Fill in the components
-8. Polish and tweak
+8. Polish and tweak 
 
 ## Challenges 
 The biggest challenges in developing this application was determinomg the best path for managing PHEVs with only monthly data. Given more ability to request more granular driving, I'd love to extend this MVP to more precisely caclulate PHEV driving data
