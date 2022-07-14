@@ -39,7 +39,6 @@ export function SustainableSavings (props: ISustainableSavingsProps) {
             dispatch(fetchTrips()).unwrap(),
             dispatch(fetchCosts()).unwrap()
           ]);
-          console.log(result);
           setIsAppLoaded(true);
         }
         catch {
