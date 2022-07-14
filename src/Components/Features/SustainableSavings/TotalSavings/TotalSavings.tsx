@@ -26,8 +26,8 @@ export function TotalSavings (props: ITotalSavingsProps) {
       <Typography component="h2" variant="h6" color="primary" gutterBottom>
         Annual Savings
       </Typography>
-      <Box sx={{display: 'flex', alignItems: 'center', justifyContent: 'center', minHeight: 160}}>
-        <Typography component="p" variant='h4' sx={{ fontWeight: 'bold', color: 'success.main'}}>
+      <Box sx={{display: 'flex', alignItems: 'center', justifyContent: 'center', minHeight: 120}}>
+        <Typography component="p" variant='h3' sx={{ fontWeight: 'bold', color: 'success.main'}}>
           ${totalSavings.toFixed(2)}
         </Typography>
       </Box>

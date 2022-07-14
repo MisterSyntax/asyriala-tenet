@@ -46,7 +46,7 @@ export function SustainableSavings (props: ISustainableSavingsProps) {
   if(!isAppLoaded) {
     return (
       <Box>
-        <Typography variant='h2' component='h1'>Sustainable Savings</Typography>
+        <Typography variant='h2' component='h1' sx={{ fontWeight: 'bold' }}>Sustainable Savings</Typography>
         <Box sx={{ height: '50vh', display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
           <CircularProgress />
         </Box>
@@ -57,7 +57,7 @@ export function SustainableSavings (props: ISustainableSavingsProps) {
   return (
     <Grid container spacing={3}>
       <Grid item>
-        <Typography variant='h2' component='h1'>Sustainable Savings</Typography>
+        <Typography variant='h2' component='h1' sx={{ fontWeight: 'bold' }}>Sustainable Savings</Typography>
       </Grid>
       <Grid item xs={12}>
         <VehicleSelect />
@@ -81,7 +81,7 @@ export function SustainableSavings (props: ISustainableSavingsProps) {
             p: 2,
             display: 'flex',
             flexDirection: 'column',
-            height: 240,
+            height: 200,
           }}
         >
           <TotalSavings />
