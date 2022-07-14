@@ -19,9 +19,9 @@ Since we are using json-server for our endpoints this application must be run lo
 
 This runs the React application and the api. You can visit the applicaton at (http://localhost:3000/)[http://localhost:3000/]
 
-##  Additional commands
+##  Testing
 ### `yarn test` 
-This runs the test suite. There are unit tests on the redux portion of the app, and an integration test for loading data, and interacting with selection of vehicles.
+There are unit tests on the redux portion of the app, and an integration test for loading data, and interacting with selection of vehicles.
 
 ## Developement Process
 1. Sketch out some wireframes
