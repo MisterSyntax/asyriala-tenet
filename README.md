@@ -11,6 +11,11 @@ This application is used to calculate the monthly and annual cash savings for dr
 ## How to run
 Since we are using json-server for our endpoints this application must be run locally. To do so follow the following steps
 
+## `git clone https://github.com/MisterSyntax/asyriala-tenet.git`
+clone the repo
+
+## `cd asyriala-tenet`
+
 ## `yarn`
 install your dependencies
 
