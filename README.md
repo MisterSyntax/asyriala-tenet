@@ -1,50 +1,42 @@
-# Getting Started with Create React App
+# Sustainable Savings
+This application is used to calculate the monthly and annual cash savings for driving an EV vs a 2019 Audi Q7.
+
+## PHEV Disclaimer
+- **Disclaimer**: The calculations in this assume a PHEV was always on EV power. The reason we do this is because we don't have enough information about how far a user drove at a time, only monthly driving data. As a result it is possible a user never drove less than the EVs range before recharging. We would need more granular data in order to properly calculate savings for PHEVs. So, since this is just a prototype I took the easy route.
+- **How to iterate**: If had more granular data on PHEVs driving we could use the following formula to calculate savings
+  - `costPHEV=(milesDrivenElec/mpkWh)*costKwH + (milesDriven/mpg)*costGas`
+
+## How to run
+Since we are using json-server for our endpoints this application must be run locally.
+
+### `yarn start` 
+This runs the React application. You can visit the applicaton at (http://localhost:3000/)[http://localhost:3000/]
+
+### `yarn start-api`
+This runs the mock api
+
+### `yarn test` 
+This runs the test
+
+## Developement Process
+1. Sketch out some wireframes
+2. Identify components and what data each of those components need see [Outline.md](./OUTLINE.md) as well as types
+3. Create the caculations for savings see [Outline.md](./OUTLINE.md)
+4. Create the folders and files for the components and the store. Then fill all of those with their templates (using snippets)
+5. Parse the data files, and create the mock apis
+6. Create the redux store, slices, selectors, and their tests
+7. Fill in the components
+8. Polish and tweak
+
+## Challenges 
+The biggest challenges in developing this application was determinomg the best path for managing PHEVs with only monthly data. Given more ability to request more granular driving, I'd love to extend this MVP to more precisely caclulate PHEV driving data
+
+Also, due to time constraints I did not have bandwidth to build React Components tests. I've migrated to using RTL, 
 
 ## Tech used
 Create React App
 MUI
-Redux  & Redux Toolkit
+Redux & Redux Toolkit
 [Recharts](https://github.com/recharts/recharts) for visualizations
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `yarn start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+json-server
+Jest
