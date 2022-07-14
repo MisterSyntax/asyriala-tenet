@@ -8,6 +8,7 @@ import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 
 /** Components */
+import SavingsTooltip from './SavingsTooltip/SavingsTooltip';
 
 /** Types */
 
@@ -35,11 +36,11 @@ export function SavingsGraph (props: ISavingsGraphProps) {
           <CartesianGrid strokeDasharray="3 3" />
           <XAxis dataKey="month" />
           <YAxis />
-          <Tooltip />
+          <Tooltip content={<SavingsTooltip/>} />
           <Bar dataKey="savings" fill={theme.palette.primary.light} />
         </BarChart>
       </ResponsiveContainer>
-      <Typography variant='body2'>Savings are calculated compared to a 2019 Audi Q7</Typography>
+      <Typography variant='body2'>Savings are calculated compared to a 2019 Audi Q7, and assume trips shorter than the vehicles electric range</Typography>
     </Box>
   );
 }

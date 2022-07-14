@@ -27,7 +27,7 @@ export  function Footer () {
         <Container maxWidth='sm'>
           <Typography variant='body1'>
             {`Andrew Syriala |  `}
-            <Link href='mailto:asyriala@gmail.com'>
+            <Link href='mailto:asyriala@gmail.com' sx={{ color: 'primary.dark' }}>
               asyriala@gmail.com
             </Link>
             {` | (339)933-0509`}
