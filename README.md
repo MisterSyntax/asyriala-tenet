@@ -1,5 +1,5 @@
 # Sustainable Savings 
-This application is used to calculate the monthly and annual cash savings for driving an EV vs a 2019 Audi Q7.
+This application is used to calculate the monthly and annual cash savings for driving an EV or PHEV vs a 2019 Audi Q7.
 
 ![Screen Shot 2022-07-14 at 12 09 36 AM](https://user-images.githubusercontent.com/22300258/178923059-43814265-69fa-4e63-a68e-1e4658940f66.png)
 
@@ -11,23 +11,17 @@ This application is used to calculate the monthly and annual cash savings for dr
 ## How to run
 Since we are using json-server for our endpoints this application must be run locally. To do so follow the following steps
 
-## `git clone https://github.com/MisterSyntax/asyriala-tenet.git`
-clone the repo
+`git clone https://github.com/MisterSyntax/asyriala-tenet.git`
+`cd asyriala-tenet`
+`yarn`
+`yarn start-api`
+`yarn start` 
 
-## `cd asyriala-tenet`
-
-## `yarn`
-install your dependencies
-
-### `yarn start-api`
-Start thethe mock api
-
-### `yarn start` 
-This runs the React application. You can visit the applicaton at (http://localhost:3000/)[http://localhost:3000/]
+This runs the React application and the api. You can visit the applicaton at (http://localhost:3000/)[http://localhost:3000/]
 
 ##  Additional commands
 ###`yarn test` 
-This runs the tests
+This runs the test suite. There are unit tests on the redux portion of the app, and an integration test for loading data, and interacting with selection of vehicles.
 
 ## Developement Process
 1. Sketch out some wireframes
@@ -43,9 +37,7 @@ This runs the tests
 ![image](https://user-images.githubusercontent.com/22300258/178923829-063fb1af-846a-40a7-9a03-ab9f2932ed68.png)
 
 ## Challenges 
-The biggest challenges in developing this application was determinomg the best path for managing PHEVs with only monthly data. Given more ability to request more granular driving, I'd love to extend this MVP to more precisely caclulate PHEV driving data.
-
-Also, due to time constraints I did not have bandwidth to build React Components tests. I've migrated to using RTL, 
+The biggest challenges in developing this application was determining the best path for managing PHEVs with only monthly data. With the current data there is no way to determine when a user re-charged. Given more granular driving, I'd love to extend this MVP to more precisely caclulate PHEV savings.
 
 ## Tech used
 Create React App
