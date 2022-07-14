@@ -1,4 +1,4 @@
-# Sustainable Savings
+# Sustainable Savings 
 This application is used to calculate the monthly and annual cash savings for driving an EV vs a 2019 Audi Q7.
 
 ![Screen Shot 2022-07-14 at 12 09 36 AM](https://user-images.githubusercontent.com/22300258/178923059-43814265-69fa-4e63-a68e-1e4658940f66.png)
