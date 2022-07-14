@@ -4,12 +4,12 @@ This application is used to calculate the monthly and annual cash savings for dr
 ![Screen Shot 2022-07-14 at 12 09 36 AM](https://user-images.githubusercontent.com/22300258/178923059-43814265-69fa-4e63-a68e-1e4658940f66.png)
 
 ## PHEV Disclaimer
-- **Disclaimer**: The calculations in this assume a PHEV was always on EV power. The reason we do this is because we don't have enough information about how far a user drove at a time, only monthly driving data. As a result it is possible a user never drove less than the EVs range before recharging. We would need more granular data in order to properly calculate savings for PHEVs. So, since this is just a prototype I took the easy route.
-- **How to iterate**: If had more granular data on PHEVs driving we could use the following formula to calculate savings
+- **Disclaimer**: The calculations for PHEV are for electric-only usage. The reason for this in this MVP, is because we only have monthly driving data. This data does not reveal what percentage of the time a user used gas vs electric. We would need more granular data in order to accurately calculate savings for PHEVs. 
+- That being said, if we had more granular driving data, that indicated how much gas vs electricty was used in trips we could easily calculate those savings with the following formula.
   - `costPHEV=(milesDrivenElec/mpkWh)*costKwH + (milesDriven/mpg)*costGas`
 
 ## How to run
-Since we are using json-server for our endpoints this application must be run locally. To do so follow the following steps
+Since we are using json-server for our endpoints this application must be run locally. You can run it locally by performing the following actions.
 
 `git clone https://github.com/MisterSyntax/asyriala-tenet.git`
 `cd asyriala-tenet`
