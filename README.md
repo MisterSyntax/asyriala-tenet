@@ -5,7 +5,7 @@ This application is used to calculate the monthly and annual cash savings for dr
 
 ## PHEV Disclaimer
 - **Disclaimer**: The calculations for PHEV are for electric-only usage. The reason for this in this MVP, is because we only have monthly driving data. This data does not reveal what percentage of the time a user used gas vs electric. We would need more granular data in order to accurately calculate savings for PHEVs. 
-- That being said, if we had more granular driving data, that indicated how much gas vs electricty was used in trips we could easily calculate those savings with the following formula.
+- That being said, if we had more granular driving data, which indicated how much gas vs electricty was used in trips, we could calculate those savings with the following formula.
   - `costPHEV=(milesDrivenElec/mpkWh)*costKwH + (milesDriven/mpg)*costGas`
 
 ## How to run
