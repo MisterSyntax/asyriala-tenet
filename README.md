@@ -25,9 +25,8 @@ This runs the React application. You can visit the applicaton at (http://localho
 This runs the tests
 
 ## Developement Process
-1. Sketch out some wireframes ![image](https://user-images.githubusercontent.com/22300258/178923829-063fb1af-846a-40a7-9a03-ab9f2932ed68.png)
-
-
+1. Sketch out some wireframes
+  ![image](https://user-images.githubusercontent.com/22300258/178923829-063fb1af-846a-40a7-9a03-ab9f2932ed68.png)
 2. Identify components and what data each of those components need see [Outline.md](./OUTLINE.md) as well as types
 3. Create the caculations for savings see [Outline.md](./OUTLINE.md)
 4. Create the folders and files for the components and the store. Then fill all of those with their templates (using snippets)
