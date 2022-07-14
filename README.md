@@ -7,16 +7,20 @@ This application is used to calculate the monthly and annual cash savings for dr
   - `costPHEV=(milesDrivenElec/mpkWh)*costKwH + (milesDriven/mpg)*costGas`
 
 ## How to run
-Since we are using json-server for our endpoints this application must be run locally.
+Since we are using json-server for our endpoints this application must be run locally. To do so follow the following steps
+
+## `yarn`
+install your dependencies
+
+### `yarn start-api`
+Start thethe mock api
 
 ### `yarn start` 
 This runs the React application. You can visit the applicaton at (http://localhost:3000/)[http://localhost:3000/]
 
-### `yarn start-api`
-This runs the mock api
-
-### `yarn test` 
-This runs the test
+##  Additional commands
+###`yarn test` 
+This runs the tests
 
 ## Developement Process
 1. Sketch out some wireframes
@@ -40,3 +44,4 @@ Redux & Redux Toolkit
 [Recharts](https://github.com/recharts/recharts) for visualizations
 json-server
 Jest
+jest and react-testing-library
