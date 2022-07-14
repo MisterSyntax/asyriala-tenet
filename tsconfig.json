@@ -3,6 +3,7 @@
     "baseUrl": "./src",
     "paths": {
       "appState": ["appState"],
+      "utils": ["utils"],
       "store": ["appState/store"],
       "redux-hooks": ["appState/redux-hooks"],
       "Features": ["Components/Features"],
@@ -26,7 +27,9 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx",
+    "jsx": "react-jsx"
   },
-  "include": ["src/**/*"]
+  "include": [
+    "src"
+  ]
 }
